@@ -33,12 +33,17 @@ body {
     }
 
 /* ==============
-    Flickity Carousel
+    Flickity Carousel - Default styles are for iPhone 5 portait
     ============== */
+
+.main-carousel {
+    margin-bottom: 20px;
+    
+}
 .carousel-cell {
-    width: 73%; 
-    height: auto; 
-    margin: 0 15px 20px 0;
+    width: 234px; 
+    height: 415px; 
+    margin: 0 15px 0 0;
   }
 
 .carousel-cell img {
@@ -89,70 +94,107 @@ footer {
 /* ==========================================================================
    Media Queries
    ========================================================================== */
+
+/* ----------- iPhone 5 and 5S ----------- */
+
+/* Landscape */
+@media only screen
+and (max-height: 320px)
+and (max-width: 568px)
+and (orientation:landscape){
+.main-carousel {
+    margin-bottom: 7px;
+}
+.carousel-cell {
+    width: 108px;
+    height: 192px; 
+    margin: 0 5px 0 0;
+}
+.title {
+    font-size: 38px;
+    margin: 10px auto;
+}
+}
+
    /* ----------- iPhone 6 ----------- */
 
    /* Portrait */
-@media only screen 
-and (min-device-width: 375px) 
-and (max-device-width: 667px) 
-and (-webkit-min-device-pixel-ratio: 2)
-and (orientation: portrait) { 
+@media only screen
+and (min-width: 321px)
+and (max-width: 375px)
+and (min-height: 569px)
+and (max-height: 667px)
+and (orientation:portrait) { 
+.main-carousel {
+    margin-bottom: 15px;
+}
 .carousel-cell {
-    width: 75%; 
+    width: 284px;
+    height: 505px; 
       }
 .title {
-    font-size: 28px;
+    font-size: 30px;
     margin: 15px 0;
     }
 }
 
 /* Landscape */
-@media only screen 
-and (min-device-width: 375px) 
-and (max-device-width: 667px) 
-and (-webkit-min-device-pixel-ratio: 2)
-and (orientation: landscape) { 
+@media only screen
+and (min-height: 321px)
+and (max-height: 375px)
+and (min-width: 569px)
+and (max-width: 667px)
+and (orientation:landscape){
 .carousel-cell {
-    width: 19%; 
-    height: auto; 
-    margin: 0 10px 5px 0;
+    width: 133px; 
+    height: 235px; 
+    margin: 0 5px 0 0;
   }
 .title {
-    font-size: 270%;
-    margin: 10px 0;
+    font-size: 40px;
+    margin: 13px 0;
     }
 }
 
 /* ----------- iPhone 6+ ----------- */
 
 /* Portrait */
-@media only screen 
-and (min-device-width: 414px) 
-and (max-device-width: 736px) 
-and (-webkit-min-device-pixel-ratio: 3)
-and (orientation: portrait) { 
+@media only screen
+and (min-width: 376px)
+and (max-width: 414px)
+and (min-height: 668px)
+and (max-height: 736px)
+and (orientation:portrait) {
+.main-carousel {
+    margin-bottom: 10px;
+}
 .carousel-cell {
-    width: 75%; 
-  }
+    width: 331px;
+    height: 590px; 
+      }
 .title {
     font-size: 35px;
-    margin: 20px 0;
+    margin: 15px 0;
     }
 }
 
 /* Landscape */
-@media only screen 
-and (min-device-width: 414px) 
-and (max-device-width: 736px) 
-and (-webkit-min-device-pixel-ratio: 3)
-and (orientation: landscape) { 
+@media only screen
+and (min-height: 376px)
+and (max-height: 414px)
+and (min-width: 668px)
+and (max-width: 736px)
+and (orientation:landscape){ 
+.main-carousel {
+    margin-bottom: 10px;
+}
 .carousel-cell {
-    width: 20%; 
-    height: auto; 
-    margin: 0 15px 10px 0;
+    width: 154px; 
+    height: 275px; 
+    margin: 0 10px 0 0;
   }
 .title {
-    font-size: 300%;
+    font-size: 40px;
     margin: 13px 0;
     }
 }
@@ -160,9 +202,12 @@ and (orientation: landscape) {
 /* ----------- Desktop ----------- */
 @media only screen 
 and (min-device-width: 737px) {
+.main-carousel {
+    height: 696px;
+}
 .carousel-cell {
     width: 20%; 
-    height: auto; 
+    height: 100%; 
     margin: 0 15px 25px 0;
   }
 .title {
