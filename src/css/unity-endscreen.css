@@ -32,6 +32,10 @@ body {
     border-radius: 10px;
     }
 
+.fail {
+    color: #FFF;
+}
+
 /* ==============
     Flickity Carousel - Default styles are for iPhone 5 portait
     ============== */
