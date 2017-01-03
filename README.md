@@ -20,7 +20,7 @@ I was asked to design it to fit iphone5, iphone 6 and iphone 6 Plus in both land
  - <a href="https://affiliate.itunes.apple.com/resources/documentation/itunes-store-web-service-search-api/">iTunes API</a>
  - JSON
  - jsonp for cross domain requests
-
+ - created Apple touch icons
 
  ## Tools used
  - Sublime Text
